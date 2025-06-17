@@ -13,7 +13,7 @@ df = pd.read_csv('clean_weather_data.csv', parse_dates=['date'])
 today = datetime.date.today()
 
 # Sidebar Filters
-st.sidebar.title("Filters")
+st.sidebar.title("Select Date")
 
 # Set date bounds correctly
 start_date = st.sidebar.date_input(
