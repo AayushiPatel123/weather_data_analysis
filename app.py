@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import calendar
 import datetime
 import requests 
+import json
 
 # Cities for real-time API
 cities = {
@@ -16,6 +17,10 @@ cities = {
     "London": (42.9849, -81.2453),
     "Windsor": (42.3001, -83.0165)
 }
+
+# 3. Get latitude and longitude from selected city
+latitude = cities[city]["lat"]
+longitude = cities[city]["lon"]
 
 # --- Real-Time API Call ---
 url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current_weather=true"
