@@ -4,18 +4,40 @@ import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt 
 import calendar
+import datetime
 
 # Load your cleaned dataframe
 df = pd.read_csv('clean_weather_data.csv', parse_dates=['date'])
 
+# Limit max selectable date to today
+today = datetime.date.today()
+
 # Sidebar Filters
 st.sidebar.title("Filters")
-start_date = st.sidebar.date_input("Start Date", df['date'].min())
-end_date = st.sidebar.date_input("End Date", df['date'].max())
-filtered_df = df[(df['date'] >= pd.to_datetime(start_date)) & (df['date'] <= pd.to_datetime(end_date))]
+
+# Set date bounds correctly
+start_date = st.sidebar.date_input(
+    "Start Date",
+    value=df['date'].min().date(),
+    min_value=df['date'].min().date(),
+    max_value=today
+)
+
+end_date = st.sidebar.date_input(
+    "End Date",
+    value=min(df['date'].max().date(), today),
+    min_value=start_date,
+    max_value=today
+)
+
+# Apply filtering
+filtered_df = df[
+    (df['date'] >= pd.to_datetime(start_date)) &
+    (df['date'] <= pd.to_datetime(end_date))
+]
 
 # Title
-st.title("🌦️ Weather Dashboard")
+st.title("🌦️ Weather Dashboard (Windsor)")
 
 # Mean Temperature Line Chart
 fig_temp = px.line(filtered_df, x='date', y='Mean Temp (°C)', title="Mean Temperature Over Time")
