@@ -82,7 +82,7 @@ Python 3.9+
 1. Push your code to GitHub
 2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
 3. Click "New App" and select your repo
-4. Set main file path as `weather_dashboard.py`
+4. Set main file path as `app.py`
 5. Deploy 🚀
 
 --
