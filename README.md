@@ -72,8 +72,10 @@ python -m streamlit run app.py
 ```
 
 ### 5. Python recommended version
+```
 python --version
 Python 3.9+
+```
 
 ## ☁️ Deploy on Streamlit Cloud
 
