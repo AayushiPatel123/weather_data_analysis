@@ -1,6 +1,6 @@
 # 🌦️ Weather Forecast Dashboard
 
-A dynamic and interactive weather dashboard built with **Streamlit** and **Facebook Prophet**, using real-time and historical data from the **Open-Meteo API**. This dashboard provides:
+A dynamic and interactive weather dashboard built withusing **Python**, **Streamlit** and **Facebook Prophet**, using real-time and historical data from the **Open-Meteo API**. This dashboard provides:
 
 - 📡 Live weather conditions for selected Canadian cities  
 - 📊 Historical temperature and precipitation trends  
