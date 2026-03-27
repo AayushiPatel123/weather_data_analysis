@@ -1,23 +1,23 @@
-# 🌦️ Weather Forecast Dashboard
+#  Weather Forecast Dashboard
 
 A dynamic and interactive weather dashboard built withusing **Python**, **Streamlit** and **Facebook Prophet**, using real-time and historical data from the **Open-Meteo API**. This dashboard provides:
 
-- 📡 Live weather conditions for selected Canadian cities  
-- 📊 Historical temperature and precipitation trends  
-- 🔮 Predictive forecasting using Prophet (next 30 days)
+-  Live weather conditions for selected Canadian cities  
+- Historical temperature and precipitation trends  
+-  Predictive forecasting using Prophet (next 30 days)
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📍 **Real-Time Weather**: Get live temperature and windspeed for selected cities.
-- 📊 **Historical Analysis**: View trends of daily temperatures and precipitation over a custom date range.
-- 🔮 **Forecast**: Includes both 7-day outlook and 30-day forecast using Facebook Prophet.
-- 🎨 **Custom Styling**: ggplot2-inspired charts and themed dashboard with modular style components.
+-  **Real-Time Weather**: Get live temperature and windspeed for selected cities.
+-  **Historical Analysis**: View trends of daily temperatures and precipitation over a custom date range.
+-  **Forecast**: Includes both 7-day outlook and 30-day forecast using Facebook Prophet.
+-  **Custom Styling**: ggplot2-inspired charts and themed dashboard with modular style components.
 
 ---
 
-## 🏙️ Supported Cities
+##  Supported Cities
 - Toronto
 - Ottawa
 - Mississauga
@@ -27,7 +27,7 @@ A dynamic and interactive weather dashboard built withusing **Python**, **Stream
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend/UI**: Streamlit
 - **Data Sources**: [Open-Meteo API](https://open-meteo.com/)
@@ -36,7 +36,7 @@ A dynamic and interactive weather dashboard built withusing **Python**, **Stream
 - **Styling**: Custom CSS in `chart_config.py`
     
 
-## 📂 Project Structure
+##  Project Structure
 weather_data_analysis/
 ├── app.py # Main Streamlit app
 ├── forecast_model.py # Prophet forecast model logic
@@ -46,7 +46,7 @@ weather_data_analysis/
 
 # Project documentation
 ```
-## 🔧 Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 ```bash
@@ -77,7 +77,7 @@ python --version
 Python 3.9+
 ```
 
-## ☁️ Deploy on Streamlit Cloud
+##  Deploy on Streamlit Cloud
 
 1. Push your code to GitHub
 2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
@@ -87,14 +87,14 @@ Python 3.9+
 
 --
 ---
-## 📜 License
+##  License
 This project is open-source and available under the MIT License.
 
-## 🤝 Contributions
+##  Contributions
 Contributions are welcome! Feel free to fork the repo and submit pull requests.
 
 ---
-## 🔗 Credits
+##  Credits
 - [Open-Meteo API](https://open-meteo.com/)
 - [Streamlit](https://streamlit.io/)
 - [Plotly](https://plotly.com/python/)
